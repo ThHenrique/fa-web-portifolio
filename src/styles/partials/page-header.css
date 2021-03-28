@@ -1,0 +1,46 @@
+.page-header {
+  background: #ffffff;
+  width: 100vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-nav {
+  display: grid;
+
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+}
+
+.section-nav .nav-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-nav .nav-list .nav-list-item {
+  color: #868e96;
+}
+
+.section-nav .nav-list .nav-list-item:hover {
+  text-decoration: underline;
+  color: #111;
+}
+
+.section-nav .nav-list-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #af2026;
+  color: #fff;
+
+  height: 30px;
+  width: 180px;
+  border: none;
+  border-radius: 50px;
+}
+
+.section-nav .nav-list-button:hover {
+  background: #7c181d;
+  color: #f1f1f1;
+}

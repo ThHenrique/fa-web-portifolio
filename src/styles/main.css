@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f3f0;
+}
+
+body {
+  font: 500 1rem "IBM Plex Sans";
+  color: #868e96;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(1440px, 90vw);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}

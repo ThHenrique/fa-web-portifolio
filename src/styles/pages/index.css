@@ -1,0 +1,148 @@
+.introduction {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.introduction section {
+  padding-left: 5rem;
+}
+
+.introduction h1 {
+  font: 500 48px "Oleo Script";
+  letter-spacing: 3%;
+  color: #212529;
+}
+
+.introduction h2 {
+  font: 500 28px "Oleo Script";
+  letter-spacing: 4%;
+
+  color: #868e96;
+  max-width: 340px;
+
+  margin-top: 20px;
+}
+
+.introduction a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+  background: #af2026;
+  width: 180px;
+  height: 50px;
+
+  color: #fff;
+}
+
+.introduction a.button:hover {
+  background: #7c181d;
+  color: #f1f1f1;
+}
+
+.introduction img {
+  height: 40vh;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .contact-wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 50vw;
+}
+
+.contact .contact-wrap .logo-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 110px;
+
+  background: #868e96;
+  border-radius: 20px;
+
+  color: #fff;
+}
+
+.about-me {
+  margin-top: 130px;
+  padding: 5rem;
+
+  background: #000;
+  border-radius: 20px;
+}
+
+.about-me .section-about-me {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.graduated {
+  margin-top: 130px;
+}
+
+.graduated .graduated-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.graduated .graduated-wrap img {
+  height: 40vh;
+}
+
+.graduated .graduated-wrap ul li {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.experience {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience-wrap {
+  margin-top: 130px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-techs {
+  margin-top: 130px;
+
+  text-align: center;
+  display: flex;
+}
+
+.section-techs .tech-item {
+  margin-top: 50px;
+
+  width: 35vw;
+}
+
+.section-techs .tech-item .tech-wrap {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+}
