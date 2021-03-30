@@ -10,13 +10,20 @@
   align-items: center;
 }
 
-.introduction .image-wrap img {
-  left: 20vw;
+.introduction .image-wrap .image-introduction {
+  left: 15vw;
   position: absolute;
-  height: 40vh;
+  height: 50vh;
+  width: 25vw;
 
+  padding-top: 10%;
+  background: #c4c4c4;
+  border: 2px solid #000;
   border: 5px solid #fff;
+
   border-radius: 50%;
+  text-align: center;
+  color: #000000;
 }
 
 .introduction .image-wrap .square {
@@ -26,9 +33,9 @@
 }
 
 .introduction section h1 {
-  font: 700 72px "IBM Plex Sans";
+  font: 700 64px "IBM Plex Sans";
   color: #343a40;
-  max-width: 40vw;
+  max-width: 700px;
 }
 
 .introduction section h2 {
