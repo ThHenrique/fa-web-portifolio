@@ -3,11 +3,7 @@
   padding-bottom: 10rem;
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.introduction section {
-  padding-left: 5rem;
+  grid-template-columns: 2fr 2fr;
 }
 
 .introduction h1 {
@@ -52,6 +48,8 @@
 
 .introduction img {
   height: 40vh;
+  align-self: center;
+  justify-self: center;
 }
 
 .contact {
@@ -103,6 +101,8 @@
 .graduated .graduated-wrap {
   display: flex;
   justify-content: space-around;
+
+  margin-top: 20px;
 }
 
 .graduated .graduated-wrap img {
@@ -122,16 +122,15 @@
 }
 
 .experience-wrap {
-  margin-top: 130px;
+  margin-top: 50px;
 
   display: flex;
   justify-content: space-around;
+
+  margin-bottom: 130px;
 }
 
 .section-techs {
-  margin-top: 130px;
-
-  text-align: center;
   display: flex;
 }
 
@@ -139,6 +138,7 @@
   margin-top: 50px;
 
   width: 35vw;
+  text-align: center;
 }
 
 .section-techs .tech-item .tech-wrap {

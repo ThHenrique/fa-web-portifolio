@@ -26,7 +26,12 @@
   color: #111;
 }
 
-.section-nav .nav-list-button {
+.section-nav a.nav-list-button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,13 +39,13 @@
   background: #af2026;
   color: #fff;
 
-  height: 30px;
+  height: 25px;
   width: 180px;
   border: none;
   border-radius: 50px;
 }
 
-.section-nav .nav-list-button:hover {
+.section-nav a.nav-list-button:hover {
   background: #7c181d;
   color: #f1f1f1;
 }

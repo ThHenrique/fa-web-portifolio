@@ -1,0 +1,42 @@
+.cards-wrap {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 10vh;
+}
+
+.cards-wrap .card {
+  height: 45vh;
+  width: 20vw;
+
+  background: #af2026;
+  border-radius: 20px;
+
+  text-align: center;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cards-wrap .head {
+  height: 50vh;
+
+  background: #7c181d;
+}
+
+.cards-wrap .card p {
+  text-align: left;
+}
+
+.cards-wrap .card .image {
+  height: 60%;
+  margin: 0 20px;
+  background: #fff;
+  color: #111;
+  align-self: center;
+  justify-self: center;
+
+  border-radius: 10px;
+}
