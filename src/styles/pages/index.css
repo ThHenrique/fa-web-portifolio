@@ -24,8 +24,8 @@
 
 .introduction a.button {
   -webkit-appearance: button;
-  -moz-appearance: button;
   appearance: button;
+  -moz-appearance: button;
   text-decoration: none;
 
   margin-top: 40px;
