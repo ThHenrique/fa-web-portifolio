@@ -1,14 +1,26 @@
-<a href="https://www.linkedin.com/in/thiago-henrique-ferreira-2499a41a8/"> 
- <h1> Thiago Henrique Ferreira</h1> 
-</a>
+# Thiago Henrique Ferreira
 
-![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+#### São José dos Campos FATEC - "Professor Jessen Vidal"
+
+### Desenvolvimento de Software Multiplataforma
+
+> - R.A 1461392111010
+
+<br/>
+<br/>
 
 ## 🎨 Protótipo **Figma** - ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
- <br/>
+<br/>
 
-<a href="https://www.figma.com/proto/TGpGc2DxLaGAuE0vURIhZ9/webportifolioTh?node-id=30%3A35&scaling=min-zoom&page-id=0%3A1&hotspot-hints=0&hide-ui=1"><img src=".github/cover.png" width="400" /> </a>
+<img src=".github/cover.png" width="400" />
+
+## 💻 [Protótipo Web](https://www.figma.com/proto/TGpGc2DxLaGAuE0vURIhZ9/webportifolioTh?node-id=1%3A2&scaling=contain&page-id=0%3A1)
+
+## 📱 [Protótipo Mobile](https://www.figma.com/proto/TGpGc2DxLaGAuE0vURIhZ9/webportifolioTh?node-id=97%3A413&scaling=scale-down&page-id=97%3A60)
+
+ <br/>
+ <br/>
 
 ## 🎥 Gravação Video
 
@@ -24,6 +36,7 @@
 | Pasta               | Definição                                                                                                              |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | .github             | Imagens para o readme e futura automatização de Pull requests (PR's)                                                   |
+| mgt                 | Gerenciamento. Utilizado p/ anexar o protótipo web e mobile do projeto                                                 |
 | public              | Pasta pública do projeto acessível ao público geral por meio de um servidor web                                        |
 | src                 | Pasta principal do projeto, não público, onde armazena-se o código fonte de cada página, pastas dentre outros arquivos |
 | src/assets          | Pastas e arquivos visuais como imagens, estilização (css), componentes, etc.                                           |

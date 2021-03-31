@@ -46,6 +46,5 @@
 }
 
 .section-nav a.nav-list-button:hover {
-  background: #7c181d;
-  color: #f1f1f1;
+  filter: brightness(80%);
 }
