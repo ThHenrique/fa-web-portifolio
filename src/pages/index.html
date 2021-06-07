@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../styles/partials/page-header.css">
   <link rel="stylesheet" href="../styles/partials/page-footer.css">
 
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&display=swap" rel="stylesheet">
@@ -43,7 +42,8 @@
 
 
   <main>
-    <div class="introduction container">
+    <div id="introduction" class="introduction">
+      <a name='introduction' style="display: none;"></a>
       <section>
         <h1>Olá, eu sou <br />
           Thiago Henrique Ferreira.
@@ -58,47 +58,55 @@
       </section>
 
       <div class="image-profile">
-        <p>
-          imagem de perfil ou avatar
-        </p>
+        <img src="../assets/images/hello.PNG" alt="avatar-profile">
       </div>
     </div>
     <!-- Introdução -->
 
-    <div class="contact">
+    <div class="contact container">
       <h2>Contato</h2>
 
       <div class="contact-wrap">
-        <div class="logo-contact"> LOGO <br /> Linkedin</div>
-        <div class="logo-contact">LOGO <br /> GitHub</div>
-        <div class="logo-contact">LOGO <br />Rocketseat</div>
+        <a href="https://www.linkedin.com/in/thiago-henrique-ferreira-2499a41a8/" target="_blank">
+          <img src="../assets/images/linkedin.png" alt="logo-linkedin">
+        </a>
+        <a href="https://github.com/ThHenrique" target="_blank">
+          <img src="../assets/images/GitHub.png" alt="logo-GitHub">
+        </a>
+        <a href="https://app.rocketseat.com.br/me/thiago-henrique-ferreira-1575886595" target="_blank">
+          <img src="../assets/images/rocketseat.png" alt="logo-rocketseat">
+        </a>
+
       </div>
     </div>
     <!-- Contato -->
 
 
     <div class="about-me container">
-      <h2>Sobre</h2>
+      <h2>Sobre mim</h2>
 
       <div class="section-about-me">
         <section>
-          <h3>Subtitulo</h3>
+          <h3>Apresentação</h3>
           <p>
-            Contar um pouco sobre mim. Algo como idade, cidade onde vivo e curiosidades.
+            Meu nome é Thiago, tenho 19 anos, moro no Brasil, especificamente em São José dos Campos, interior de São
+            Paulo. Apaixonado por técnologia, principalmente depois de meu primeiro 'Hello world!'.
           </p>
         </section>
 
         <section>
-          <h3>Subtitulo</h3>
+          <h3>Formação</h3>
           <p>
-            Contar um pouco sobre mim. Algo como idade, cidade onde vivo e curiosidades.
+            Formado como técnico em desenvolvimento de sistemas na Escola Técnica Estadual (ETEC), atualmente estou
+            cursando Desenvolvimento de Software Multiplataforma na Faculdade de Tecnologia (FATEC).
           </p>
         </section>
 
         <section>
-          <h3>Subtitulo</h3>
+          <h3>Visão</h3>
           <p>
-            Contar um pouco sobre mim. Algo como idade, cidade onde vivo e curiosidades.
+            Iniciei como Desenvolvedor Full Stack em 2019. Desde então, viso me especializar como desenvolvedor
+            Front-end com intuito de conquistar vagas em grandes empresas do Brasil e outros países.
           </p>
         </section>
       </div>
@@ -109,16 +117,12 @@
       <h2>Formação</h2>
 
       <div class="graduated-wrap">
-        <div class="image-graduated">
-          Imagem relacionada à minha formação
-        </div>
+        <img src="../assets/svg/student.svg" alt="student">
 
         <ul>
-          Citar escolas onde estudou, formações, inglês, etc
-          <li>Escola X</li>
-          <li>Escola y</li>
-          <li>Curso X</li>
-          <li>Curso Y</li>
+          <li>Assistente administrativo - SENAI Santos Dumont.</li>
+          <li>Técnico em desenv. de sistemas - ETEC Prof.ª Ilza Nascimento Pintus.</li>
+          <li>Cursando Tecnólogo em desenv. de software multiplataforma - FATEC Prof. Jessen Vidal.</li>
         </ul>
 
       </div>
@@ -128,14 +132,16 @@
     <div class="experience container">
       <h2>Experiencia Profissional</h2>
 
-      Contar um pouco sobre as experiências que tive em minha carreira.
-      Empresas nas quais já trabalhei, dentro e fora da área
+      <!-- Contar um pouco sobre as experiências que tive em minha carreira.
+      Empresas nas quais já trabalhei, dentro e fora da área -->
 
       <div class="experience-wrap">
-        <div class="image-experience">Logo da empresa</div>
-        <div class="image-experience">Logo da empresa</div>
-        <div class="image-experience">Logo da empresa</div>
-        <div class="image-experience">Logo da empresa</div>
+        <img src="../assets/images/logo_sabesp.png" alt="logo-sabesp">
+        <img src="https://www.wevirtual.com.br/assets/img/logo.png" alt="">
+        <img src="../assets/images/bifeon.png">
+
+        <img src="https://zukk.com.br/wp-content/uploads/2020/09/logo-zukk.png" alt="logo-zukk">
+
       </div>
     </div>
     <!-- Experiencia Profissional -->
@@ -148,35 +154,43 @@
           <h3>Tenho experiencia</h3>
 
           <div class="tech-wrap">
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
+            <img src="https://xesque.rocketseat.dev/platform/tech/html5.svg" alt="logo-html5">
+            <img src="https://xesque.rocketseat.dev/platform/tech/css3.svg" alt="logo-css3">
+            <img src="https://xesque.rocketseat.dev/platform/tech/javascript.svg" alt="logo-javascript">
+
+            <img src="https://xesque.rocketseat.dev/platform/tech/reactjs.svg" alt="logo-reactjs">
+            <img src="https://xesque.rocketseat.dev/platform/tech/node.svg" alt="logo-nodejs">
+            <img src="https://xesque.rocketseat.dev/platform/tech/react-native.svg" alt="logo-react-native">
+
+            <img src="https://xesque.rocketseat.dev/platform/tech/vuejs.svg" alt="logo-vuejs">
+            <img src="https://xesque.rocketseat.dev/platform/tech/dart.svg" alt="logo-dart">
+            <img src="https://xesque.rocketseat.dev/platform/tech/flutter.svg" alt="logo-flutter">
+
+            <img src="https://xesque.rocketseat.dev/platform/tech/mysql.svg" alt="logo-mysql">
+            <img src="https://xesque.rocketseat.dev/platform/tech/bootstrap.svg" alt="logo-bootstrap">
+
           </div>
         </div>
         <div class="tech-item">
           <h3>Estou Estudando</h3>
 
           <div class="tech-wrap">
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
+            <img src="https://xesque.rocketseat.dev/platform/tech/python.svg" alt="logo-python">
+            <img src="https://xesque.rocketseat.dev/platform/tech/php.svg" alt="logo-php">
+            <img src="https://xesque.rocketseat.dev/platform/tech/java.svg" alt="logo-java">
+
+            <img src="https://xesque.rocketseat.dev/platform/tech/c-sharp.svg" alt="logo-c-sharp">
+            <img src="https://xesque.rocketseat.dev/platform/tech/aws.svg" alt="logo-aws">
+            <img src="https://xesque.rocketseat.dev/platform/tech/azure.svg" alt="logo-azure">
+
+            <img src="https://xesque.rocketseat.dev/platform/tech/docker.svg" alt="logo-docker">
           </div>
         </div>
         <div class="tech-item">
           <h3>Tenho Interesse</h3>
 
           <div class="tech-wrap">
-            <div class="image-tech">Logo tech</div>
-            <div class="image-tech">Logo tech</div>
+            <img src="https://xesque.rocketseat.dev/platform/tech/electron.svg" alt="logo-electron">
           </div>
         </div>
 
@@ -191,17 +205,22 @@
   <footer class="page-footer">
     <div class="footer-wrap container">
       <div class="footer-logo">
-        <a class="is-logo" href="index.html">
-          <img src="../assets/images/favicon.png" alt="logo">
+        <a class="is-logo" href="index.html#introduction">
+          <img src="../assets/svg/logo-ligth.svg" alt="logo">
         </a>
       </div>
 
       <div class="footer-nav">
-        Voltar ao inicio
+        <a href="index.html#introduction" class="go-back">
+          <h3>Voltar ao inicio &#8593 </h3>
+        </a>
         <div class="contact-wrap">
-          <div class="logo-contact">Portifolio</div>
-          <div class="logo-contact">Currículo</div>
-          <div class="logo-contact">GitHub</div>
+          <a href="https://www.linkedin.com/in/thiago-henrique-ferreira-2499a41a8/" target="_blank">
+            <img class="logo-contact" src="../assets/images/linkedin.png" alt="logo-linkedin">
+          </a>
+          <a href="https://github.com/ThHenrique" target="_blank">
+            <img class="logo-contact" src="../assets/images/GitHub-Light.png" alt="logo-GitHub">
+          </a>
         </div>
       </div>
     </div>

@@ -4,6 +4,15 @@
 
   display: grid;
   grid-template-columns: 2fr 2fr;
+
+  background: url(../../assets/svg/header-background.svg) no-repeat left top
+    scroll;
+}
+
+.introduction section {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 
 .introduction h1 {
@@ -46,53 +55,47 @@
 }
 
 .introduction .image-profile {
-  background: #c4c4c4;
-  height: 40vh;
-  width: 20vw;
   border-radius: 50%;
-  padding: 15%;
-  align-self: center;
+  display: flex;
+  align-items: center;
   justify-self: center;
-  text-align: center;
-  color: #000000;
-  border: 2px solid #000;
+}
+
+.introduction .image-profile img {
+  width: 100%;
+  height: 100%;
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
+
+  width: 100%;
 }
 
 .contact .contact-wrap {
-  margin-top: 50px;
+  margin-top: 3rem;
   display: flex;
-  justify-content: space-evenly;
-
-  width: 50vw;
+  justify-content: center;
 }
 
-.contact .contact-wrap .logo-contact {
+.contact .contact-wrap img {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 100px;
-  height: 110px;
-
-  background: #868e96;
-  border-radius: 20px;
-
-  color: #fff;
+  width: 5.8rem;
+  height: 6rem;
+  margin: 0 1rem;
+  border-radius: 4pt;
 }
 
 .about-me {
-  margin-top: 130px;
+  margin-top: 10rem;
   padding: 3rem;
-  max-width: 970px;
+  width: 60vw;
 
   background: #0f1324;
-  border-radius: 20px;
+  border-radius: 10pt;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -113,7 +116,7 @@
 }
 
 .about-me .section-about-me {
-  margin-top: 20px;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-around;
 }
@@ -121,24 +124,27 @@
 .about-me .section-about-me section {
   max-width: 15vw;
 }
+
 .graduated {
-  margin-top: 130px;
+  margin-top: 10rem;
 }
 
 .graduated .graduated-wrap {
+  margin-top: 3rem;
+
   display: flex;
   justify-content: space-around;
-
-  margin-top: 20px;
 }
 
-.graduated .graduated-wrap .image-graduated {
-  background: #c4c4c4;
+.graduated .graduated-wrap img {
   height: 30vh;
   width: 30vw;
-  padding: 5%;
-  text-align: center;
-  color: #000000;
+}
+
+.graduated .graduated-wrap ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .graduated .graduated-wrap ul li {
@@ -147,25 +153,23 @@
 }
 
 .experience {
-  margin-top: 130px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .experience .experience-wrap {
-  margin-top: 50px;
+  margin-top: 3rem;
 
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
 
-  margin-bottom: 130px;
+  justify-items: center;
+  align-items: center;
 }
 
-.experience .experience-wrap .image-experience {
-  height: 80px;
-  width: 140px;
-  background: #c4c4c4;
+.experience .experience-wrap img {
+  max-height: 5rem;
+  max-width: 20rem;
 }
 
 .section-techs {
@@ -173,7 +177,7 @@
 }
 
 .section-techs .tech-item {
-  margin-top: 50px;
+  margin-top: 3rem;
 
   width: 35vw;
   text-align: center;
@@ -191,11 +195,78 @@
   grid-template-rows: repeat(3, 70px);
 }
 
-.section-techs .tech-item .tech-wrap .image-tech {
+.section-techs .tech-item .tech-wrap img {
+  padding: 0.1rem;
   justify-self: center;
-  width: 95px;
-  height: 60px;
-  background: #868e96;
+  width: 4.2rem;
+  height: 4.2rem;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 4pt;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem 0;
+    text-align: left;
+  }
+
+  .introduction {
+    padding: 0 1rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact {
+    margin-top: 5rem;
+  }
+
+  .about-me {
+    /* max-width: 100%; */
+    padding: 1.3rem;
+  }
+
+  .about-me .section-about-me {
+    flex-direction: column;
+  }
+
+  .about-me .section-about-me section {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .graduated .graduated-wrap {
+    flex-direction: column;
+  }
+
+  .graduated .graduated-wrap img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .experience .experience-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 5rem);
+  }
+
+  .experience .experience-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .section-techs {
+    flex-direction: column;
+  }
+
+  .section-techs .tech-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .section-techs .tech-item:nth-child(2) {
+    border: none;
+  }
 }
