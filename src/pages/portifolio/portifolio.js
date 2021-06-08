@@ -4,37 +4,43 @@ jQuery.githubUser = function (username, callback) {
 
 jQuery.fn.loadRepositories = function (username) {
   this.html(
-    "<span>Querying GitHub for " + username + "'s repositories...</span>"
+    /*html */
+    `<div class="loadercontainer">
+      <div id="loading">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+        Carregando...
+      </div>
+    </div>`
   );
 
   var target = this;
   $.githubUser(username, function (data) {
-    var repos = data;
-
-    sortByNumberOfWatchers(repos);
+    var repositories = filterRepositories(data);
 
     var list = $("<ul/>");
     target.empty().append(list);
-    $(repos).each(function () {
+    $(repositories).each(function () {
       list.append(
         /* html */
         `  
         <li class="card">
           <h2>${this.name}</h2>
           <div class="image">Gif ou imagem do projeto</div>
-          <p>${this.language ?? ""}</p>
-          <a href='${this.svn_url}' target='_blank'>
-            <p>Ver no gitHub</p>
-          </a>
+          <p>${this.language ?? ""}
+            <a href='${this.svn_url}' target='_blank'>
+              <p>Saber mais</p>
+            </a>
+          </p>
         </li>     
         `
       );
     });
   });
 
-  function sortByNumberOfWatchers(repos) {
-    repos.sort(function (a, b) {
-      return b.watchers - a.watchers;
-    });
+  function filterRepositories(repos) {
+    return repos.filter((repo) => !repo.fork);
   }
 };

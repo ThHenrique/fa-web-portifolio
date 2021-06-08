@@ -1,36 +1,21 @@
-.cards-wrap {
-  display: flex;
-  justify-content: space-around;
-
-  margin-top: 2rem;
-}
-
-.cards-wrap #opensource-projects ul {
+.cards-wrap ul {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
 }
 
 .cards-wrap .card {
-  padding: 1rem 0.5rem;
-  margin: 2rem;
-
+  background: #e6e6e6;
+  border-radius: 4pt;
   height: 18rem;
   width: 22rem;
 
-  background: #af2026;
-  border-radius: 4pt;
+  padding: 1rem;
+  margin: 2rem;
 
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.cards-wrap .head {
-  height: 18rem;
-
-  background: #7c181d;
-}
-
-.cards-wrap .card .image {
-  margin: 1rem 2rem;
-  background: #fff;
-  color: #111;
+.cards-wrap .card img {
 }
