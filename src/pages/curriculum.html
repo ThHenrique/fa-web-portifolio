@@ -13,27 +13,38 @@
   <link rel="stylesheet" href="../styles/partials/page-header.css">
   <link rel="stylesheet" href="../styles/partials/page-footer.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&display=swap" rel="stylesheet">
 
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav-list");
+      if (x.className === "section-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "section-nav";
+      }
+    }
+  </script>
 </head>
 
 <body>
   <header class="page-header">
     <div class="container">
-      <section class="section-nav">
+      <section class="section-nav" id="nav-list">
         <div class="image-logo">
           <img src="../assets/images/favicon.png" alt="Logo" srcset="">
         </div>
-
-        <div class="nav-list">
-
-          <a href="index.html" class="nav-list-item">Inicio </a>
-          <a href="portifolio/portifolio.html" class="nav-list-item">Portifolio</a>
-
-          <a href="curriculum.html" class="nav-list-button">Currículo</a>
-        </div>
+        <a href="index.html" class="nav-list-item">Inicio </a>
+        <a href="portifolio/portifolio.html" class="nav-list-item">Portifolio</a>
+        <a href="curriculum.html" class="nav-list-button">Currículo</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </section>
     </div>
   </header>
