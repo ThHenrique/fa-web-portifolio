@@ -7,7 +7,7 @@
   background: #e6e6e6;
   border-radius: 4pt;
   height: 18rem;
-  width: 22rem;
+  max-width: 22rem;
 
   padding: 1rem;
   margin: 2rem;
@@ -17,5 +17,17 @@
   justify-content: space-between;
 }
 
+.cards-wrap ul .card > * {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .cards-wrap .card img {
+}
+
+@media (max-width: 768px) {
+  .cards-wrap ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
