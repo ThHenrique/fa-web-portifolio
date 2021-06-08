@@ -42,11 +42,12 @@
 
 .informations-wrap {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 30vw);
+  justify-content: space-between;
 }
 
 .informations-wrap section {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .informations-wrap .title {
@@ -60,6 +61,19 @@
   color: #868e96;
 
   margin-top: 1.2rem;
+}
+
+.informations-wrap ul.skills {
+  margin: 1rem 0 0.4rem;
+}
+
+.informations-wrap ul.skills li {
+  margin: 1rem 0 0.6rem;
+  list-style-type: disc;
+}
+
+.informations-wrap .subtitle a {
+  color: #868e96;
 }
 
 .no-content {
