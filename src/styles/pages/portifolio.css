@@ -2,41 +2,35 @@
   display: flex;
   justify-content: space-around;
 
-  margin-top: 10vh;
+  margin-top: 2rem;
+}
+
+.cards-wrap #opensource-projects ul {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
 }
 
 .cards-wrap .card {
-  height: 45vh;
-  width: 20vw;
+  padding: 1rem 0.5rem;
+  margin: 2rem;
+
+  height: 18rem;
+  width: 22rem;
 
   background: #af2026;
-  border-radius: 20px;
+  border-radius: 4pt;
 
-  text-align: center;
   color: #fff;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .cards-wrap .head {
-  height: 50vh;
+  height: 18rem;
 
   background: #7c181d;
 }
 
-.cards-wrap .card p {
-  text-align: left;
-}
-
 .cards-wrap .card .image {
-  height: 60%;
-  margin: 0 20px;
+  margin: 1rem 2rem;
   background: #fff;
   color: #111;
-  align-self: center;
-  justify-self: center;
-
-  border-radius: 10px;
 }

@@ -3,10 +3,13 @@
   background: #0f1324;
 }
 
-.page-footer .footer-wrap .footer-nav .go-back {
+.page-footer .footer-wrap .footer-actions {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.page-footer .footer-wrap .footer-actions a:visited {
   color: #e9e9e9;
 }
 
