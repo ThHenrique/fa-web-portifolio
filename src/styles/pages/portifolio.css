@@ -6,8 +6,6 @@
 .cards-wrap .card {
   background: #e6e6e6;
   border-radius: 4pt;
-  height: 18rem;
-  max-width: 22rem;
 
   padding: 1rem;
   margin: 2rem;
@@ -22,7 +20,15 @@
   white-space: nowrap;
 }
 
+.cards-wrap ul .card label {
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+}
+
 .cards-wrap .card img {
+  padding: 2rem;
+  max-width: 17rem;
+  align-self: center;
 }
 
 @media (max-width: 768px) {

@@ -28,7 +28,12 @@ jQuery.fn.loadRepositories = function (username) {
         `  
         <li class="card">
           <h2>${this.name}</h2>
-          <div class="image">Gif ou imagem do projeto</div>
+          <img
+          src='https://raw.githubusercontent.com/${username}/${this.name}/${
+          this.default_branch
+        }/.github/cover.png' alt="${this.name}-logo" srcset="" />
+          
+          <label>${this.description ?? ""}</label>
           <p>${this.language ?? ""}
             <a href='${this.svn_url}' target='_blank'>
               <p>Saber mais</p>
