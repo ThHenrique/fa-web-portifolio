@@ -6,17 +6,17 @@
 }
 
 body {
-  background-color: #f4f3f0;
+  background-color: #f4f3f0 !important;
 }
 
 body {
   font: 500 1rem "IBM Plex Sans";
-  color: #868e96;
+  color: #868e96 !important;
   border: none;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .container {

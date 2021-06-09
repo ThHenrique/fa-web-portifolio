@@ -14,9 +14,6 @@
   left: 15%;
   position: absolute;
 
-  max-width: 30rem;
-  max-height: 30rem;
-
   overflow: hidden;
 
   border: 5px solid #fff;
@@ -24,8 +21,9 @@
 }
 
 .introduction .image-wrap .image-introduction img {
-  width: 100%;
-  height: 100%;
+  object-fit: contain;
+  width: 20rem;
+  height: 20rem;
 }
 
 .introduction .image-wrap .square {
@@ -41,6 +39,7 @@
 }
 
 .informations-wrap {
+  margin-top: 8rem;
   display: grid;
   grid-template-columns: repeat(2, 30vw);
   justify-content: space-between;
@@ -84,7 +83,7 @@
   background: #c4c4c4;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .introduction {
     display: flex;
     flex-direction: column;

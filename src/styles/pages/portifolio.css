@@ -6,29 +6,21 @@
 .cards-wrap .card {
   background: #e6e6e6;
   border-radius: 4pt;
-
-  padding: 1rem;
   margin: 2rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.cards-wrap ul .card > * {
+.cards-wrap ul .card section > * {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.cards-wrap ul .card label {
+.cards-wrap ul .card section p {
   white-space: pre-wrap;
   margin-bottom: 1rem;
 }
-
-.cards-wrap .card img {
-  padding: 2rem;
-  max-width: 17rem;
-  align-self: center;
+.cards-wrap ul .card img {
+  height: 15rem;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
