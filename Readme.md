@@ -9,7 +9,7 @@
 <br/>
 <br/>
 
-## 🎨 Protótipo **Figma** - ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+## 🎨 Protótipo **Figma** - ![version](https://img.shields.io/badge/version-final-blue.svg)
 
 <br/>
 
@@ -22,11 +22,17 @@
  <br/>
  <br/>
 
-## 🎥 Gravação Video
+## 🎥 Gravações de Video
 
  <br/>
 
+#### Primeira entrega:
+
 <a href="https://youtu.be/wIOTSf-U4OU"> <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /> </a>
+
+#### Entrega final:
+
+<a href="https://www.youtube.com/watch?v=JRyM4xD8pPs"> <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /> </a>
 
 <br/>
 <br/>
