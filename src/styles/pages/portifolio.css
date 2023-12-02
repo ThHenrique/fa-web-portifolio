@@ -1,3 +1,7 @@
+.container section {
+  margin-top: 2rem;
+}
+
 .cards-wrap ul {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
