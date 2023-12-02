@@ -1,8 +1,7 @@
 const loaderContainerEl = window.document.querySelector(".loadercontainer");
-const listContainerEl = window.document.querySelector(".cards-wrap");
 
 function githubUser(username, callback) {
-  fetch(`https://api.github.com/users/${username}/repos`)
+  fetch(`https://api.github.com/users/${username}/repos?per_page=100`)
     .then((response) => response.json())
     .then((data) => callback(data))
     .catch(() => {
@@ -18,6 +17,15 @@ function loadRepositories() {
 
   githubUser(username, function (data) {
     const repositories = filterRepositories(data);
+
+    const apiProjectsRepository = filterApiFatecRepositories(data)
+
+    handleAddRepositoriesInSection(apiProjectsRepository, "#api-cards-wrap")
+    handleAddRepositoriesInSection(repositories, "#cards-wrap")
+  });
+
+  function handleAddRepositoriesInSection(repositories, elementId, sectionName) {
+    const listContainerEl = window.document.querySelector(`${elementId}`);
 
     const list = document.createElement("ul");
 
@@ -53,12 +61,24 @@ function loadRepositories() {
 
       list.appendChild(card);
     });
-
     listContainerEl.appendChild(list);
-  });
+  }
 
   function filterRepositories(repos) {
     return repos.filter((repo) => !repo.fork);
+  }
+
+  function filterApiFatecRepositories(repos) {
+    const apiList = [
+      "fa-mood-hound-documentation",
+      "fa-owl-partners-documentation",
+      "fa-cloud-fox-documentation",
+      "fa-help-duck-documentation",
+      "fa-polaris-documentation",
+      "fa-public-data-analysis-documentation"
+    ]
+    
+    return repos.filter((repo) => apiList.includes(repo.name));
   }
 }
 
